@@ -12,6 +12,15 @@ from keras.layers import Embedding, Conv1D, GlobalMaxPooling1D, Dense
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.utils import to_categorical
+import json
+
+from dataset import turkce_sarkilar
+
+with open('dataset.json', 'w') as json_dosyasi:
+    json.dump(turkce_sarkilar, json_dosyasi)
+
+with open('dataset.json', 'r') as json_dosyasi:
+    turkce_sarkilar = json.load(json_dosyasi)
 
 def turkish_to_english(text):
     # Türkçe karakterleri İngilizce karakterlere çeviren bir çeviri sözlüğü
