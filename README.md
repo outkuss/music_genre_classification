@@ -1,3 +1,4 @@
-kod bu dosyada:  __autograph_generated_filebryla576.py
+kod bu dosyada:  music_genre_classification_code.json
 
-dataset de burada: dataset.py
+dataset de burada: dataset.json
+
